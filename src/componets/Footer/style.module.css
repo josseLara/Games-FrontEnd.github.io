@@ -1,0 +1,100 @@
+.footer{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+     border-top: 1px solid gray;
+     margin-top: 100px;
+}
+.left{
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+.left img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  background-color: #ffffffb5;
+  border-radius: 100%;
+}
+.left p{
+     color: #fff;
+     font-family: "Koulen", sans-serif;
+     font-size: 1rem;
+     font-weight: 500;
+     padding: 10px;
+     margin: 0;
+     opacity: .5;
+    
+}
+
+
+.wrapper {
+     display: inline-flex;
+     list-style: none;
+   }
+   
+   .wrapper .icon {
+     position: relative;
+     background: #ffffff;
+     border-radius: 50%;
+     padding: 15px;
+     margin: 10px;
+     width: 20px;
+     height: 20px;
+     font-size: 18px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   }
+   
+.tooltip {
+     position: absolute;
+     top: 0;
+     font-size: 14px;
+     background: #ffffff;
+     color: #000;
+     padding: 5px 8px;
+     border-radius: 5px;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+     opacity: 0;
+     pointer-events: none;
+     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   }
+   
+   .wrapper .tooltip::before {
+     position: absolute;
+     content: "";
+     height: 8px;
+     width: 8px;
+     background: #ffffff;
+     bottom: -3px;
+     left: 50%;
+     transform: translate(-50%) rotate(45deg);
+     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   }
+   
+.icon:hover .tooltip {
+     top: -45px;
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+   
+   }
+   
+.icon:hover span,
+.icon:hover .tooltip {
+     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    
+   }
+   .icon:hover,.icon:hover span,.icon:hover .tooltip::before {
+     color: #fff !important;
+     background: linear-gradient(180deg, #290396 0%, rgba(39, 20, 92, 0.684028) 31.6%, rgba(41, 3, 150, 0) 100%);;
+   }
+   
+   

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Koulen');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.home {
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     position: relative;
+     overflow-x: hidden;
+}
+
+/* header */
+.header {
+     position: relative;
+     width: 100%;
+     height: 400px;
+}
+
+/* video */
+.video {
+     width: 100%;
+     height: 750px;
+     position: absolute;
+     top: -30%;
+     filter: brightness(70%)
+}
+
+.infor {
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     z-index: 5;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     left: 5%;
+}
+
+.title {
+     font-family: "Koulen", sans-serif;
+     color: #fff;
+     margin: 0;
+     padding: 0;
+     font-size: 2.9rem !important;
+     font-weight: 600;
+}
+
+.description {
+     font-size: 1rem;
+     font-family: sans-serif;
+     color: #fff;
+     font-weight: 400;
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     margin-bottom: 18px;
+}
+
+.inforBtn {
+     padding: 10px 25px;
+     background-color: transparent;
+     border: 1px solid #fff;
+     font-family: "Koulen", sans-serif;
+     color: #fff;
+     font-size: 1.2rem;
+     transition: all .2s ease-in-out;
+}
+
+.inforBtn:hover {
+     background-color: #fff;
+     color: #000;
+     cursor: pointer;
+}
+
+/* background */
+.triangle,
+.circle,
+.cross,
+.square {
+     width: 26px;
+     height: 26px;
+     display: block;
+     background-image: url('../../../public/triangulo.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     animation: animStar 150s linear infinite;
+}
+
+.circle {
+     background-image: url('../../../public/circulo.png');
+}
+
+.cross {
+     background-image: url('../../../public/cuadrado.png');
+}
+
+.square {
+     background-image: url('../../../public/x.png');
+}
+
+@keyframes animStar {
+     from {
+          transform: translateY(0px);
+     }
+
+     to {
+          transform: translateY(100vh);
+     }
+}
+
+/* main */
+.main {
+     width: 100%;
+     height: 100%;
+     background-color: #000;
+}
+
+.contentTop {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: center;
+     justify-content: space-around;
+     padding: 10px;
+}
+/* control */
+.control{
+     display: flex;
+     padding: 10px;
+     flex-wrap: wrap-reverse;
+     justify-content: space-around;
+     align-items: center;
+     margin-top: -15%;
+}
+.controlInfor{
+     width: 650px;
+     display: flex;
+     align-items: start;
+     flex-direction: column;
+}
+.controlInfor h2{
+     color: #fff;
+     font-family: "Koulen", sans-serif;
+     font-size: 2.1rem;
+     font-weight: 500;
+     margin: 0;
+     padding: 0;
+}
+.controlInfor p{
+     color: #fff;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.2rem;
+     font-weight: 400;
+     margin: 0;
+     padding: 0;
+     margin-top: 20px;
+}
+.controlInfor span{
+     color: #D7DB29;
+     font-family: "Koulen", sans-serif;
+     font-size: 20px;
+     font-weight: 500;
+     margin: 0;
+     padding: 0;
+     border-bottom: 1px solid #D7DB29;
+     margin-top: 30px;
+     transition: all .1s ease-in;
+}
+.controlInfor span:hover{
+     cursor: pointer;
+     color: #20489E;
+     border-color: #20489E;
+}
+.control img{
+     width: 410px;
+     height: 410px;
+     object-fit: cover;
+     animation: controlImg 2s infinite alternate ease-in-out;
+}
+@keyframes controlImg{
+     0%{
+          transform: translateY(30px);
+     }
+     100%{
+          transform: translateY(0px);
+
+     }
+}
+
+/* gamesPs4 */
+.h3,.h3Pc{
+     color: #fff;
+     font-family: "Koulen", sans-serif;
+     font-size: 2.1rem;
+     font-weight: 500;
+     padding: 10px;
+     margin: 0;
+     opacity: .5;
+     margin-left: 30px;
+     margin-top: 60px;
+}
+.gamesPs4{
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     justify-content: center;
+     margin-top: 20px;
+     overflow: hidden;
+}
+/* gamesPc */
+.h3Pc{
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: -90px;
+}
+.gamesPc{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 60px;
+    
+}
+@media screen and (min-width:900px) {
+
+     .infor {
+          bottom: -30%;
+          left: 5%;
+     }
+
+     .title {
+          font-size: 2rem;
+
+     }
+
+     .description {
+          font-size: 1.2rem;
+          font-family: sans-serif;
+          color: #fff;
+          font-weight: 400;
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          margin-bottom: 18px;
+     }
+
+     .inforBtn {
+          padding: 13px 28px;
+          background-color: transparent;
+          border: 1px solid #fff;
+          font-family: "Koulen", sans-serif;
+          color: #fff;
+     }
+
+     /* main */
+     .main {
+          margin-top: 100px;
+          padding: 20px;
+     }
+     .contentTop{
+          flex-direction: row;
+     }
+     /* gamesPs4 */
+     .gamesPs4{
+          height: 360px;
+          flex-direction: row;
+          justify-content: space-around;
+     }
+}
