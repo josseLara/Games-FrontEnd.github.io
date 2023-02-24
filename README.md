@@ -1,4 +1,4 @@
-# FrontEnd Games
+# FrontEnd Games ( Responsive )
 
 1) Pagina de Index
 ![image](https://user-images.githubusercontent.com/99273526/221062153-50c72e72-bde5-4d83-aec4-e88c2a4c5d7e.png)
